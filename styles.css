@@ -1,0 +1,88 @@
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --highlight-color: #b87333;
+    --accent-color: red;
+}
+
+[data-theme="light"] {
+    --bg-color: #fff;
+    --text-color: #000;
+    --highlight-color: #b87333;
+    --accent-color: red;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--highlight-color);
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+.profile-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    color: var(--highlight-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid var(--accent-color);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--highlight-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    opacity: 0.8;
+}
